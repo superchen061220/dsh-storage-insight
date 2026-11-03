@@ -8,11 +8,17 @@ A settings page that answers three questions: how much does dsh use, where does 
 
 ## 安装 / Install
 
+**Web 界面**（profile 名通常是 `web`）：
+
 ```bash
-dsh plugin --profile <你的 profile> add dsh-storage-insight
+dsh plugin --profile web add dsh-storage-insight
 ```
 
-然后重启 dsh（或重新打开页面），打开 **设置 → 存储空间**。
+**桌面版**：直接在 **插件** 页安装，不需要命令行。
+
+装完重启 dsh，打开 **设置 → 存储空间**。
+
+> `dsh plugin add` 会自动把包登记进 profile 的 `dsh.profile.bundles`（实测确认），不需要手工改配置。
 
 ## 它显示什么
 
