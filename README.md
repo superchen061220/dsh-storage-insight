@@ -11,14 +11,16 @@ A settings page that answers three questions: how much does dsh use, where does 
 **Web 界面**（profile 名通常是 `web`）：
 
 ```bash
-dsh plugin --profile web add dsh-storage-insight
+dsh plugin --profile web add github:superchen061220/dsh-storage-insight
 ```
 
-**桌面版**：直接在 **插件** 页安装，不需要命令行。
+**桌面版**：直接在 **插件** 页的搜索框里找 `dsh-storage-insight` 安装。
 
 装完重启 dsh，打开 **设置 → 存储空间**。
 
-> `dsh plugin add` 会自动把包登记进 profile 的 `dsh.profile.bundles`（实测确认），不需要手工改配置。
+> `dsh plugin add` 会自动把插件加入 profile 并登记 `dsh.profile.bundles`（实测确认），不需要手工改配置。
+> 安装时需要能访问 github.com；如果你的网络访问 GitHub 不稳定，也可以下载仓库后本地安装：
+> `dsh plugin --profile web add "C:\path\to\dsh-storage-insight"`。
 
 ## 它显示什么
 
