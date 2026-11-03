@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Storage",
+    "description": "Scans this machine's DSH data, runtimes and temp folders, and frees rebuildable caches safely."
+  }
+}

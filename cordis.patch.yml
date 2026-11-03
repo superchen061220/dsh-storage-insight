@@ -1,0 +1,3 @@
+- insert:
+    - id: storage-insight
+      name: 'dsh-storage-insight'
