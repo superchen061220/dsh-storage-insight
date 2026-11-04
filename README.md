@@ -13,7 +13,8 @@ A settings page that answers three questions: how much does dsh use, where does 
 **命令行**（profile 名通常是 `web`；桌面版是 `desktop`）：
 
 ```bash
-dsh plugin --profile web add github:superchen061220/dsh-storage-insight
+dsh plugin --profile web add dsh-storage-insight          # npm（推荐，快）
+dsh plugin --profile web add github:superchen061220/dsh-storage-insight   # GitHub 源（备选）
 ```
 
 > ⚠️ 在**已存在**的 profile 里，`dsh plugin add` 只安装依赖，**不会**把插件登记进 `dsh.profile.bundles`；
@@ -22,8 +23,8 @@ dsh plugin --profile web add github:superchen061220/dsh-storage-insight
 
 装完重启 dsh，打开 **设置 → 存储空间**。
 
-> 安装时需要能访问 github.com；如果 GitHub 不稳定，也可以下载仓库后本地安装：
-> `dsh plugin --profile web add "C:\path\to\dsh-storage-insight"`。
+> npm 源需要能访问 registry.npmjs.org；GitHub 源需要能访问 github.com。
+> 两者都不通时，可以下载仓库后本地安装：`dsh plugin --profile web add "C:\path\to\dsh-storage-insight"`。
 
 ## 它显示什么
 
@@ -91,6 +92,8 @@ node test-render.mjs   # 用真实快照渲染组件（需要 dsh 在跑）
 ```
 
 ## English
+
+Install from npm: dsh plugin --profile web add dsh-storage-insight (or from GitHub: github:superchen061220/dsh-storage-insight).
 
 Storage Insight adds a **Settings → Storage** page to DeepSeek Harness: a donut of disk usage, three categories (conversations & files, cache & temp, runtime & plugins), a drill-down that lists archived sessions you can delete, and a clean action that only touches rebuildable caches.
 
