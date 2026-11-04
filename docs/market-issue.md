@@ -4,7 +4,7 @@
 | --- | --- |
 | name | `dsh-storage-insight` |
 | repo | https://github.com/superchen061220/dsh-storage-insight |
-| install | `dsh plugin --profile web add github:superchen061220/dsh-storage-insight` |
+| install | `dsh plugin --profile web add dsh-storage-insight` |
 | category | `dev` |
 | license | MIT |
 | capabilities | `shell`, `fs-write`, `fs-read` |
@@ -22,7 +22,7 @@ Capability notes: `shell` is only used to send a deleted session folder to the W
   "name": "dsh-storage-insight",
   "owner": "superchen061220",
   "url": "https://github.com/superchen061220/dsh-storage-insight",
-  "npm": null,
+  "npm": "dsh-storage-insight",
   "version": "0.1.0",
   "category": "dev",
   "description": {
@@ -34,7 +34,7 @@ Capability notes: `shell` is only used to send a deleted session folder to the W
     "fs-write",
     "fs-read"
   ],
-  "install": "dsh plugin --profile web add github:superchen061220/dsh-storage-insight",
+  "install": "dsh plugin --profile web add dsh-storage-insight",
   "icon": "https://raw.githubusercontent.com/superchen061220/dsh-storage-insight/main/assets/icon-180.png",
   "screenshots": [
     "https://raw.githubusercontent.com/superchen061220/dsh-storage-insight/main/assets/screenshot-light.png",
